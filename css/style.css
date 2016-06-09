@@ -1,0 +1,254 @@
+/*
+::-webkit-scrollbar {
+    display: none;
+}
+*/
+
+body, html {
+  height:100%;
+}
+
+body {
+  position: relative;
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color:#ffffff;
+}
+
+p {
+  color:#ffffff;
+}
+
+#navi-main {
+  position: fixed;
+  bottom:0;
+  padding:0;
+  margin-bottom:0;
+  width:100%;
+  background:#000000;
+}
+
+#navi-main a {
+  color: #60816a;
+  text-transform: uppercase;
+}
+
+#navi-main a:focus,
+#navi-main a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#navi-main ul {
+  padding:0;
+  margin:0;
+}
+
+#navi-main ul li {
+}
+
+.active .navi-link {
+  border-bottom:3px solid #60816a;
+  padding-bottom:3px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#arrow-nav {
+  opacity: .4;
+  font-size:35px;
+  color:#ffffff;
+  position: fixed;
+  bottom:80px;
+  right:40px;
+}
+
+#home {
+  background-image: url(../images/bg-home.jpg);
+  background-size: cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#home-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#about {
+  background-image: url(../images/bg-cycling.jpg);
+  background-size: cover;
+  height:100%;
+  width:100%;
+  position: relative;
+}
+
+#about-text {
+  position: absolute;
+  top:0;
+  right:0;
+  height:100vh;
+  padding:20px 0 0 40px;
+  background:rgba(41, 48, 87, 0.5);
+}
+
+#camping {
+  background-image: url(../images/bg-camping.jpg);
+  background-size: cover;
+  height:100%;
+  width:100%;
+  position: relative;
+}
+
+#camping-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#backpacking {
+  background-image: url(../images/bg-backpacking.jpg);
+  background-size: cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#backpacking-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#hunting {
+  background-image: url(../images/bg-hunting.jpg);
+  background-size: cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#hunting-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#skateboarding {
+  background-image: url(../images/bg-skateboarding.jpg);
+  background-size: cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#skateboarding-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#skiing {
+  background-image: url(../images/bg-skiing.jpg);
+  background-size: cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#skiing-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#fishing {
+  background-image: url(../images/bg-fishing.jpg);
+  background-size: cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#fishing-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#paddlesports {
+  background-image: url(../images/bg-paddlesports.jpg);
+  background-size: cover;
+  height:100%;
+  min-height: 100%;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#paddlesports-intro {
+  position: absolute;
+  padding-top:35vh;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#cycling {
+  background-image: url(../images/bg-cycling.jpg);
+  background-size: cover;
+  height:100%;
+  width:100%;
+  position: relative;
+}
+
+#cycling-text {
+  position: absolute;
+  top:0;
+  right:0;
+  height:100vh;
+  padding:20px 0 0 40px;
+  background:rgba(41, 48, 87, 0.5);
+}
