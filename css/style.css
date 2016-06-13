@@ -10,7 +10,6 @@ body, html {
 
 body {
   position: relative;
-  overflow-y: hidden;
 }
 
 h1,
@@ -20,10 +19,27 @@ h4,
 h5,
 h6 {
   color:#ffffff;
+  font-family: "Times New Roman", Georgia, Serif;
 }
 
 p {
   color:#ffffff;
+}
+
+button {
+  background:#60816a;
+  border:none;
+  color:#ffffff;
+  padding:5px 25px;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color:#ffffff;
+  text-decoration: underline;
 }
 
 #navi-main {
@@ -33,6 +49,9 @@ p {
   margin-bottom:0;
   width:100%;
   background:#000000;
+  z-index: 9999;
+  border-radius: 0;
+  border:none;
 }
 
 #navi-main a {
@@ -54,6 +73,17 @@ p {
 #navi-main ul li {
 }
 
+.navbar-header {
+  width:50px;
+  position: absolute;
+  right:10px;
+  bottom:0;
+}
+
+.icon-bar {
+  background:#60816a;
+}
+
 .active .navi-link {
   border-bottom:3px solid #60816a;
   padding-bottom:3px;
@@ -66,6 +96,8 @@ p {
 
 .navbar .navbar-collapse {
     text-align: center;
+    border: none;
+    height:200px;
 }
 
 #arrow-nav {
@@ -108,7 +140,7 @@ p {
   top:0;
   right:0;
   height:100vh;
-  padding:20px 0 0 40px;
+  padding:20px 20px 0 20px;
   background:rgba(41, 48, 87, 0.5);
 }
 
@@ -120,30 +152,13 @@ p {
   position: relative;
 }
 
-#camping-intro {
+#camping-text {
   position: absolute;
-  padding-top:35vh;
-  width:100%;
-  height:100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#backpacking {
-  background-image: url(../images/bg-backpacking.jpg);
-  background-size: cover;
-  height:100%;
-  min-height: 100%;
-  width:100%;
-  min-width: 100%;
-  position: relative;
-}
-
-#backpacking-intro {
-  position: absolute;
-  padding-top:35vh;
-  width:100%;
-  height:100%;
-  background: rgba(0, 0, 0, 0.5);
+  top:0;
+  right:0;
+  height:100vh;
+  padding:20px 20px 0 20px;
+  background:rgba(41, 48, 87, 0.5);
 }
 
 #hunting {
@@ -156,12 +171,13 @@ p {
   position: relative;
 }
 
-#hunting-intro {
+#hunting-text {
   position: absolute;
-  padding-top:35vh;
-  width:100%;
-  height:100%;
-  background: rgba(0, 0, 0, 0.5);
+  top:0;
+  right:0;
+  height:100vh;
+  padding:20px 20px 0 20px;
+  background:rgba(41, 48, 87, 0.5);
 }
 
 #skateboarding {
@@ -252,3 +268,29 @@ p {
   padding:20px 0 0 40px;
   background:rgba(41, 48, 87, 0.5);
 }
+
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }

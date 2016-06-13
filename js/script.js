@@ -78,6 +78,8 @@
   });
 
 
+/* disable scroll
+
 var timeStamp = new Date().getTime();
 
 
@@ -163,7 +165,7 @@ var timeStamp = new Date().getTime();
       return false;
   });
 
-
+*/
 
 
 
