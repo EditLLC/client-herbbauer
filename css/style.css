@@ -303,8 +303,11 @@ a:hover {
 
       p {
         text-align: center;
+        padding-left:10px;
+        padding-right:10px;
+        font-size:10px;
       }
-      
+
       #navi-main a {
         font-size:10px;
       }
