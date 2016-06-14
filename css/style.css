@@ -305,7 +305,7 @@ a:hover {
         text-align: center;
         padding-left:10px;
         padding-right:10px;
-        font-size:12px;
+        font-size:11px;
       }
 
       #navi-main a {
@@ -322,7 +322,7 @@ a:hover {
       #hunting-text,
       #fishing-text,
       #cycling-text {
-        padding-top:40px;
+        padding-top:25px;
       }
     }
 
