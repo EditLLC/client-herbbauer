@@ -297,6 +297,14 @@ a:hover {
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+      h1,h2,h3,h4,h5,h6 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+      
       #navi-main a {
         font-size:10px;
       }
@@ -304,7 +312,9 @@ a:hover {
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
-
+      #home-intro {
+        padding-top:25vh;
+      }
     }
 
     /* Custom, iPhone Retina */

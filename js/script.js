@@ -3,8 +3,14 @@
   'use strict';
 
   var home = document.getElementById('home');
-  var cycling = document.getElementById('cycling');
+  var about = document.getElementById('about');
   var camping = document.getElementById('camping');
+  var hunting = document.getElementById('hunting');
+  var skateboarding = document.getElementById('skateboarding');
+  var skiing = document.getElementById('skiing');
+  var fishing = document.getElementById('fishing');
+  var paddlesports = document.getElementById('paddlesports');
+  var cycling = document.getElementById('cycling');
   var arrowUp = document.getElementById('arrow-nav-up');
   var arrowDown = document.getElementById('arrow-nav-down');
   var windowHeight = window.innerHeight;
@@ -26,8 +32,87 @@
        // (default click behaviour)
        window.location.hash = hash;
      });
+   });
+
+   $(window).on('beforeunload', function() {
+       $(window).scrollTop(0);
+   });
+
+
+var running = false;
+
+document.onkeydown = function(e) {
+  if(e.keyCode == 37 || e.keyCode == 38 && running == false) {
+    event.preventDefault(e);
+    running = true;
+    $('html, body').animate({
+  scrollTop: window.pageYOffset - windowHeight
+}, 500);
+    setTimeout(function(){ running = false; }, 500);
+  }
+
+  if(e.keyCode == 39 || e.keyCode == 40 && running == false) {
+    event.preventDefault(e);
+    running = true;
+    windowHeight = window.innerHeight;
+    $('html, body').animate({
+  scrollTop: window.pageYOffset + windowHeight
+}, 500);
+    setTimeout(function(){ running = false; }, 500);
+  }
+
+  else {
+    return;
+  }
+}
+
+
+var windowOffsetScroll = window.pageYOffset;
+var windowHeight = window.innerHeight;
+
+arrowUp.addEventListener('click', function() {
+  if(running == false) {
+    running = true;
+    $('html, body').animate({
+  scrollTop: window.pageYOffset - windowHeight
+}, 500);
+    setTimeout(function(){ running = false; }, 500);
+  }
+});
+
+arrowDown.addEventListener('click', function() {
+  //scroll to #about
+  if(running == false && windowOffsetScroll < $('#about').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#about').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+      windowOffsetScroll = $('#about').offset().top + 1;
+
+  //scroll to #camping
+  }   else if(running == false && windowOffsetScroll >= $('#about').offset().top && windowOffsetScroll < $('#camping').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#camping').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+        windowOffsetScroll = $('#camping').offset().top + 1;
+
+  //scroll to hunting
+  }   else if(running == false && windowOffsetScroll >= $('#camping').offset().top && windowOffsetScroll < $('#hunting').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#camping').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+        windowOffsetScroll = $('#hunting').offset().top + 1;
+  }
 
 });
+
+
+
+
+
+/* up down button navigation
 
   var running = false;
 
@@ -77,6 +162,8 @@
     }
   });
 
+
+*/
 
 /* disable scroll
 
