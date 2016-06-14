@@ -305,11 +305,24 @@ a:hover {
         text-align: center;
         padding-left:10px;
         padding-right:10px;
-        font-size:10px;
+        font-size:12px;
       }
 
       #navi-main a {
         font-size:10px;
+      }
+
+      #arrow-nav {
+        bottom:60px;
+        right:8px;
+      }
+
+      #about-text,
+      #camping-text,
+      #hunting-text,
+      #fishing-text,
+      #cycling-text {
+        padding-top:40px;
       }
     }
 
