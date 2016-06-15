@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-  background-color:#00003b;
+  background-color:#2f4c38;
   transition: all .15s ease-in;
 }
 
@@ -67,6 +67,7 @@ a:hover {
 #navi-main a {
   color: #60816a;
   text-transform: uppercase;
+  font-size:14px;
 }
 
 #navi-main a:focus,
@@ -116,6 +117,15 @@ a:hover {
   position: fixed;
   bottom:80px;
   right:40px;
+  cursor: pointer;
+}
+
+.logo {
+  position: fixed;
+  top:15px;
+  left:15px;
+  z-index:9000;
+  width:150px;
 }
 
 #home {
@@ -131,7 +141,7 @@ a:hover {
 
 #home-intro {
   position: absolute;
-  padding-top:35vh;
+  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
@@ -206,10 +216,14 @@ a:hover {
 
 #skateboarding-intro {
   position: absolute;
-  padding-top:35vh;
+  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.boardroom {
+  width:320px;
 }
 
 #skiing {
@@ -225,7 +239,7 @@ a:hover {
 
 #skiing-intro {
   position: absolute;
-  padding-top:35vh;
+  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
@@ -264,7 +278,7 @@ a:hover {
 
 #paddlesports-intro {
   position: absolute;
-  padding-top:35vh;
+  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
@@ -297,7 +311,11 @@ a:hover {
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-
+      #navi-main a {
+        font-size:12px;
+        padding-left:10px;
+        padding-right:10px;
+      }
     }
 
     /* Small Devices, Tablets */
@@ -328,6 +346,14 @@ a:hover {
       #fishing-text,
       #cycling-text {
         padding-top:25px;
+      }
+
+      .logo {
+        position: absolute;
+        top:15px;
+        left:15px;
+        z-index:9000;
+        width:150px;
       }
     }
 
