@@ -24,7 +24,6 @@ button {
   background:#60816a;
   border:none;
   color:#ffffff;
-  padding:5px 25px;
 }
 
 button:hover {
@@ -109,9 +108,18 @@ a:hover {
   font-size:35px;
   color:#ffffff;
   position: fixed;
-  bottom:80px;
-  right:40px;
+  bottom:90px;
+  right:50px;
   cursor: pointer;
+}
+
+.learn-more-button a {
+  display:inline-block;
+  padding:5px 25px;
+}
+
+.learn-more-button a:hover {
+  text-decoration: none;
 }
 
 #home {
@@ -164,6 +172,7 @@ a:hover {
   position: absolute;
   top:0;
   right:0;
+  height:100vh;
   padding:20px 20px 0 20px;
   background:rgba(41, 48, 87, 0.5);
 }
@@ -287,11 +296,85 @@ a:hover {
   background:rgba(41, 48, 87, 0.5);
 }
 
+#summer {
+  background-image: url(../images/bg-summerrentals.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height:100%;
+  width:100%;
+  min-width: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#summer-intro {
+  position: absolute;
+  padding-top:5vh;
+  padding-bottom:140px;
+  width:100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#winter {
+  background-image: url(../images/bg-winterrentals.jpg);
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  min-width: 100%;
+  height:100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#winter-intro {
+  position: absolute;
+  padding-top:5vh;
+  padding-bottom:140px;
+  width:100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.table-rentals {
+  margin:0 auto;
+  width:70%;
+}
+
+.table-rentals, th, td {
+  border:solid 1px #60816a;
+}
+
+th {
+  background:#60816a;
+  font-size:20px;
+}
+
+th, td {
+  padding:10px 20px;
+}
+
+th, td {
+    color:#ffffff;
+}
+
+td {
+  background:rgba(0,0,0,.5);
+}
+
 /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
 
+    }
+
+    @media only screen and (max-width : 1024px) {
+      #navi-main a {
+        font-size:14px;
+        padding-left:10px;
+        padding-right:10px;
+      }
     }
 
     /* Medium Devices, Desktops */
@@ -317,12 +400,13 @@ a:hover {
       }
 
       #navi-main a {
-        font-size:10px;
+        font-size:9px;
+        line-height:12px;
       }
 
       #arrow-nav {
-        bottom:60px;
-        right:8px;
+        bottom:80px;
+        right:20px;
       }
 
       #about-text,
@@ -338,6 +422,11 @@ a:hover {
     @media only screen and (max-width : 480px) {
       #home-intro {
         padding-top:25vh;
+      }
+
+      #arrow-nav {
+        bottom:60px;
+        right:8px;
       }
     }
 
