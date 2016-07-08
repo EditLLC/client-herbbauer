@@ -311,9 +311,8 @@ a:hover {
   position: absolute;
   padding-top:5vh;
   padding-bottom:140px;
-  width:100%;
   min-height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background:rgba(41, 48, 87, 0.5);
 }
 
 #winter {
@@ -331,14 +330,13 @@ a:hover {
   position: absolute;
   padding-top:5vh;
   padding-bottom:140px;
-  width:100%;
   min-height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background:rgba(41, 48, 87, 0.5);
 }
 
 .table-rentals {
   margin:0 auto;
-  width:70%;
+  width:80%;
 }
 
 .table-rentals, th, td {
@@ -359,7 +357,7 @@ th, td {
 }
 
 td {
-  background:rgba(0,0,0,.5);
+  background:rgba(41, 48, 87, 0.5);
 }
 
 /*==========  Non-Mobile First Method  ==========*/
