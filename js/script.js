@@ -11,6 +11,8 @@
   var fishing = document.getElementById('fishing');
   var paddlesports = document.getElementById('paddlesports');
   var cycling = document.getElementById('cycling');
+  var summer = document.getElementById('summer');
+  var winter = document.getElementById('winter');
   var arrowUp = document.getElementById('arrow-nav-up');
   var arrowDown = document.getElementById('arrow-nav-down');
   var windowHeight = window.innerHeight;
@@ -105,10 +107,24 @@ document.onkeydown = function(e) {
         setTimeout(function(){ running = false;}, 500);
     }
     //scroll to #cycling
-    if(running == false && windowOffsetScroll >= $('#cycling').offset().top) {
+    if(running == false && windowOffsetScroll > $('#cycling').offset().top && windowOffsetScroll <= $('#summer').offset().top) {
       running = true;
       $('html, body').animate({
-        scrollTop: $('#paddlesports').offset().top}, 500);
+        scrollTop: $('#cycling').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
+    //scroll to #summer
+    if(running == false && windowOffsetScroll > $('#summer').offset().top && windowOffsetScroll <= $('#winter').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#summer').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
+    //scroll to #winter
+    if(running == false && windowOffsetScroll >= $('#winter').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#summer').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
   }
@@ -170,6 +186,20 @@ document.onkeydown = function(e) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#cycling').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
+    //scroll to summer
+    if(running == false && windowOffsetScroll >= $('#cycling').offset().top && windowOffsetScroll < $('#summer').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#summer').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
+    //scroll to winter
+    if(running == false && windowOffsetScroll >= $('#summer').offset().top && windowOffsetScroll < $('#winter').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#winter').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
   }
@@ -240,10 +270,24 @@ arrowUp.addEventListener('click', function() {
       setTimeout(function(){ running = false;}, 500);
   }
   //scroll to #cycling
-  if(running == false && windowOffsetScroll >= $('#cycling').offset().top) {
+  if(running == false && windowOffsetScroll > $('#cycling').offset().top && windowOffsetScroll <= $('#summer').offset().top) {
     running = true;
     $('html, body').animate({
-      scrollTop: $('#paddlesports').offset().top}, 500);
+      scrollTop: $('#cycling').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
+  //scroll to #summer
+  if(running == false && windowOffsetScroll > $('#summer').offset().top && windowOffsetScroll <= $('#winter').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#summer').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
+  //scroll to #winter
+  if(running == false && windowOffsetScroll >= $('#winter').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#summer').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
 });
@@ -305,6 +349,20 @@ arrowDown.addEventListener('click', function() {
     running = true;
     $('html, body').animate({
       scrollTop: $('#cycling').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
+  //scroll to summer
+  if(running == false && windowOffsetScroll >= $('#cycling').offset().top && windowOffsetScroll < $('#summer').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#summer').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
+  //scroll to winter
+  if(running == false && windowOffsetScroll >= $('#summer').offset().top && windowOffsetScroll < $('#winter').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#winter').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
 
