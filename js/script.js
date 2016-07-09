@@ -18,7 +18,7 @@
   var windowHeight = window.innerHeight;
 
   $('body').scrollspy({ target: '#navi-main' })
-  $(".navbar-nav li a[href^='#']").on('click', function(e) {
+  $(".navbar-nav li a[href^='#'],.learn-more-button a[href^='#']").on('click', function(e) {
    // prevent default anchor click behavior
    e.preventDefault();
 

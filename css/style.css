@@ -31,7 +31,8 @@ button:hover {
   transition: all .15s ease-in;
 }
 
-a {
+a,
+a:focus {
   color: #ffffff;
 }
 
@@ -88,7 +89,7 @@ a:hover {
   background:#60816a;
 }
 
-.active .navi-link {
+.navbar-nav>.active>a {
   border-bottom:3px solid #60816a;
   padding-bottom:3px;
 }
@@ -420,6 +421,12 @@ td {
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
+      .navbar-nav>.active>a {
+        color:#ffffff !important;
+        border-bottom:none;
+        padding-bottom:10px;
+      }
+
       #home-intro {
         padding-top:25vh;
       }
