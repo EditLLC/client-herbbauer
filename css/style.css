@@ -479,6 +479,10 @@ td {
         padding-bottom:10px;
       }
 
+      span.navi-link br {
+        display: none;
+      }
+
       #home-intro {
         padding-top:10vh;
       }
