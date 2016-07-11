@@ -420,7 +420,7 @@ td {
     }
 
     /* Extra Small Devices, Phones */
-    @media only screen and (max-width : 480px) {
+    @media only screen and (max-width : 480px) and (orientation:portrait) {
       .navbar-nav>.active>a {
         color:#ffffff !important;
         border-bottom:none;
@@ -429,6 +429,58 @@ td {
 
       #home-intro {
         padding-top:25vh;
+      }
+
+      #arrow-nav {
+        bottom:60px;
+        right:8px;
+      }
+      #summer {
+        background-image: url(../images/bg-summerrentals.jpg);
+        background-size: cover;
+        background-position: center;
+        height:110%;
+        min-height: 100%;
+        width:100%;
+        min-width: 100%;
+        position: relative;
+      }
+
+      #summer-intro {
+        position: absolute;
+        padding-top:2vh;
+        min-height: 100%;
+        background:rgba(41, 48, 87, 0.5);
+      }
+
+      #winter {
+        background-image: url(../images/bg-winterrentals.jpg);
+        background-size: cover;
+        background-position: center;
+        height:110%;
+        min-height: 100%;
+        width:100%;
+        min-width: 100%;
+        position: relative;
+      }
+
+      #winter-intro {
+        position: absolute;
+        padding-top:2vh;
+        min-height: 100%;
+        background:rgba(41, 48, 87, 0.5);
+      }
+    }
+
+    @media only screen and (max-width : 480px) and (orientation:landscape) {
+      .navbar-nav>.active>a {
+        color:#ffffff !important;
+        border-bottom:none;
+        padding-bottom:10px;
+      }
+
+      #home-intro {
+        padding-top:5vh;
       }
 
       #arrow-nav {
