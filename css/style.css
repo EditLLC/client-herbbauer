@@ -420,7 +420,7 @@ td {
     }
 
     /* Extra Small Devices, Phones */
-    @media only screen and (max-width : 480px) and (orientation:portrait) {
+    @media only screen and (max-width : 767px) and (orientation:portrait) {
       .navbar-nav>.active>a {
         color:#ffffff !important;
         border-bottom:none;
@@ -472,7 +472,7 @@ td {
       }
     }
 
-    @media only screen and (max-width : 480px) and (orientation:landscape) {
+    @media only screen and (max-width : 767px) and (orientation:landscape) {
       .navbar-nav>.active>a {
         color:#ffffff !important;
         border-bottom:none;
@@ -480,18 +480,35 @@ td {
       }
 
       #home-intro {
-        padding-top:5vh;
+        padding-top:10vh;
       }
 
       #arrow-nav {
         bottom:60px;
         right:8px;
       }
+
+      #about {
+        height:150%;
+      }
+
+      #hunting {
+        height:120%;
+      }
+
+      #skateboarding {
+        height:110%;
+      }
+
+      #skateboarding-intro {
+        padding-top: 10vh;
+      }
+
       #summer {
         background-image: url(../images/bg-summerrentals.jpg);
         background-size: cover;
         background-position: center;
-        height:110%;
+        height:130%;
         min-height: 100%;
         width:100%;
         min-width: 100%;
@@ -509,7 +526,7 @@ td {
         background-image: url(../images/bg-winterrentals.jpg);
         background-size: cover;
         background-position: center;
-        height:110%;
+        height:150%;
         min-height: 100%;
         width:100%;
         min-width: 100%;
