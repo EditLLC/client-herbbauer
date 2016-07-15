@@ -14,6 +14,8 @@ h5,
 h6 {
   color:#ffffff;
   font-family: "Times New Roman", Georgia, Serif;
+  text-align: center;
+  margin:0 0 10px 0;
 }
 
 p {
@@ -114,6 +116,10 @@ a:hover {
   cursor: pointer;
 }
 
+.learn-more-button {
+  margin:10px 0;
+}
+
 .learn-more-button a {
   display:inline-block;
   padding:5px 25px;
@@ -123,12 +129,27 @@ a:hover {
   text-decoration: none;
 }
 
+#camping .resources,
+#hunting .resources,
+#skateboarding .resources,
+#fishing-text .resources {
+  text-align: center;
+}
+
+.resources a {
+  text-decoration: underline;
+}
+
+.resources a:hover {
+  text-decoration: none;
+}
+
 #home {
   background-image: url(../images/bg-home.jpg);
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -136,10 +157,10 @@ a:hover {
 
 #home-intro {
   position: absolute;
-  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
+  padding-top:220px;
 }
 
 #about {
@@ -147,16 +168,30 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
+  min-height: 750px;
   width:100%;
+  min-width: 100%;
   position: relative;
 }
 
-#about-text {
+#about-intro {
   position: absolute;
-  top:0;
-  right:0;
-  height:100vh;
-  background:rgba(41, 48, 87, 0.5);
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top:75px;
+}
+
+.map {
+  position: relative;
+}
+
+.location {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background: rgba(41, 48, 87, 0.5);
 }
 
 #camping {
@@ -164,16 +199,16 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
+  min-height: 750px;
   width:100%;
+  min-width: 100%;
   position: relative;
 }
 
 #camping-text {
-  position: absolute;
-  top:0;
-  right:0;
-  height:100vh;
+  height:100%;
   background:rgba(41, 48, 87, 0.5);
+  padding-top:150px;
 }
 
 #hunting {
@@ -181,26 +216,24 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
 }
 
 #hunting-text {
-  position: absolute;
-  top:0;
-  right:0;
-  height:100vh;
+  height:100%;
   background:rgba(41, 48, 87, 0.5);
+  padding-top:35px;
 }
 
 #skateboarding {
   background-image: url(../images/bg-skateboarding.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -208,10 +241,10 @@ a:hover {
 
 #skateboarding-intro {
   position: absolute;
-  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
+  padding-top:220px;
 }
 
 .boardroom {
@@ -223,7 +256,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -231,10 +264,10 @@ a:hover {
 
 #skiing-intro {
   position: absolute;
-  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
+  padding-top:220px;
 }
 
 #fishing {
@@ -242,26 +275,24 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
 }
 
 #fishing-text {
-  position: absolute;
-  top:0;
-  right:0;
-  height:100vh;
+  height:100%;
   background:rgba(41, 48, 87, 0.5);
+  padding-top:150px;
 }
 
 #paddlesports {
   background-image: url(../images/bg-paddlesports.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -269,10 +300,10 @@ a:hover {
 
 #paddlesports-intro {
   position: absolute;
-  padding-top:30vh;
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
+  padding-top:160px;
 }
 
 #cycling {
@@ -280,16 +311,16 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
+  min-height: 750px;
   width:100%;
+  min-width: 100%;
   position: relative;
 }
 
 #cycling-text {
-  position: absolute;
-  top:0;
-  right:0;
-  height:100vh;
+  height:100%;
   background:rgba(41, 48, 87, 0.5);
+  padding-top:180px;
 }
 
 #summer {
@@ -297,7 +328,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -305,9 +336,9 @@ a:hover {
 
 #summer-intro {
   position: absolute;
-  padding-top:2vh;
   min-height: 100%;
   background:rgba(41, 48, 87, 0.5);
+  padding-top:50px;
 }
 
 #winter {
@@ -315,7 +346,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 100%;
+  min-height: 750px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -323,9 +354,9 @@ a:hover {
 
 #winter-intro {
   position: absolute;
-  padding-top:2vh;
   min-height: 100%;
   background:rgba(41, 48, 87, 0.5);
+  padding-top:50px;
 }
 
 .table-rentals {
@@ -385,9 +416,6 @@ td {
       }
 
       p {
-        text-align: center;
-        padding-left:10px;
-        padding-right:10px;
         font-size:11px;
       }
 
@@ -401,12 +429,26 @@ td {
         right:20px;
       }
 
-      #about-text,
-      #camping-text,
-      #hunting-text,
-      #fishing-text,
-      #cycling-text {
-        padding-top:25px;
+      #home,
+      #about,
+      #camping,
+      #hunting,
+      #skateboarding,
+      #skiing,
+      #fishing,
+      #paddlesports,
+      #cycling,
+      #summer,
+      #winter {
+        min-height: 650px;
+      }
+
+      #camping-text p,
+      #hunting-text p,
+      #skateboarding p,
+      #skiing p,
+      #fishing-text p,
+      #cycling-text p {
       }
 
       .table-rentals {
@@ -427,48 +469,9 @@ td {
         padding-bottom:10px;
       }
 
-      #home-intro {
-        padding-top:25vh;
-      }
-
       #arrow-nav {
         bottom:60px;
         right:8px;
-      }
-      #summer {
-        background-image: url(../images/bg-summerrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:110%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
-      }
-
-      #summer-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
-      }
-
-      #winter {
-        background-image: url(../images/bg-winterrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:110%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
-      }
-
-      #winter-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
       }
     }
 
@@ -483,65 +486,9 @@ td {
         display: none;
       }
 
-      #home-intro {
-        padding-top:10vh;
-      }
-
       #arrow-nav {
         bottom:60px;
         right:8px;
-      }
-
-      #about {
-        height:150%;
-      }
-
-      #hunting {
-        height:120%;
-      }
-
-      #skateboarding {
-        height:110%;
-      }
-
-      #skateboarding-intro {
-        padding-top: 10vh;
-      }
-
-      #summer {
-        background-image: url(../images/bg-summerrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:130%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
-      }
-
-      #summer-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
-      }
-
-      #winter {
-        background-image: url(../images/bg-winterrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:150%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
-      }
-
-      #winter-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
       }
     }
 
@@ -553,68 +500,46 @@ td {
         padding-bottom:10px;
       }
 
-      #home-intro {
-        padding-top:10vh;
-      }
-
       #arrow-nav {
         bottom:60px;
         right:8px;
       }
 
-      #about {
-        height:145%;
+      #home-intro {
+        padding-top:190px
       }
 
-      #hunting {
-        height:145%;
+      #about-intro {
+        padding-top:100px;
       }
 
-      #skateboarding {
-        height:120%;
+      #camping-text {
+      }
+
+      #hunting-text {
       }
 
       #skateboarding-intro {
-        padding-top:10vh;
+        padding-top:100px;
+      }
+
+      #skiing-intro {
+      }
+
+      #fishing-text {
       }
 
       #paddlesports-intro {
-        padding-top:10vh;
+        padding-top:70px;
       }
-      #summer {
-        background-image: url(../images/bg-summerrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:165%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
+
+      #cycling-text {
       }
 
       #summer-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
-      }
-
-      #winter {
-        background-image: url(../images/bg-winterrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:160%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
       }
 
       #winter-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
       }
     }
 
@@ -629,71 +554,10 @@ td {
         display: none;
       }
 
-      #home-intro {
-        padding-top:5vh;
-      }
-
       #arrow-nav {
         bottom:60px;
         right:8px;
       }
-
-      #about {
-        height:150%;
-      }
-
-      #hunting {
-        height:150%;
-      }
-
-      #skateboarding {
-        height:130%;
-      }
-
-      #skateboarding-intro {
-        padding-top: 10vh;
-      }
-
-      #paddlesports-intro {
-        padding-top:10vh;
-      }
-
-      #summer {
-        background-image: url(../images/bg-summerrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:160%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
-      }
-
-      #summer-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
-      }
-
-      #winter {
-        background-image: url(../images/bg-winterrentals.jpg);
-        background-size: cover;
-        background-position: center;
-        height:190%;
-        min-height: 100%;
-        width:100%;
-        min-width: 100%;
-        position: relative;
-      }
-
-      #winter-intro {
-        position: absolute;
-        padding-top:2vh;
-        min-height: 100%;
-        background:rgba(41, 48, 87, 0.5);
-      }
-    }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
