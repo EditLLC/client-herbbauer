@@ -144,6 +144,11 @@ a:hover {
   text-decoration: none;
 }
 
+.social-icons {
+  width:30px;
+  margin:5px;
+}
+
 #home {
   background-image: url(../images/bg-home.jpg);
   background-size: cover;
@@ -160,7 +165,7 @@ a:hover {
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
-  padding-top:220px;
+  padding:220px 20px 20px 20px;
 }
 
 #about {
@@ -179,7 +184,7 @@ a:hover {
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
-  padding-top:75px;
+  padding:75px 20px 20px 20px;
 }
 
 .map {
@@ -208,7 +213,7 @@ a:hover {
 #camping-text {
   height:100%;
   background:rgba(41, 48, 87, 0.5);
-  padding-top:150px;
+  padding:150px 20px 20px 20px;
 }
 
 #hunting {
@@ -225,7 +230,7 @@ a:hover {
 #hunting-text {
   height:100%;
   background:rgba(41, 48, 87, 0.5);
-  padding-top:35px;
+  padding:35px 20px 20px 20px;
 }
 
 #skateboarding {
@@ -244,7 +249,7 @@ a:hover {
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
-  padding-top:220px;
+  padding:220px 20px 20px 20px;
 }
 
 .boardroom {
@@ -267,7 +272,7 @@ a:hover {
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
-  padding-top:220px;
+  padding:220px 20px 20px 20px;
 }
 
 #fishing {
@@ -284,7 +289,7 @@ a:hover {
 #fishing-text {
   height:100%;
   background:rgba(41, 48, 87, 0.5);
-  padding-top:150px;
+  padding:150px 20px 20px 20px;
 }
 
 #paddlesports {
@@ -303,7 +308,7 @@ a:hover {
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
-  padding-top:160px;
+  padding:160px 20px 20px 20px;
 }
 
 #cycling {
@@ -320,7 +325,7 @@ a:hover {
 #cycling-text {
   height:100%;
   background:rgba(41, 48, 87, 0.5);
-  padding-top:180px;
+  padding:180px 20px 20px 20px;
 }
 
 #summer {
