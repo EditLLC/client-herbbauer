@@ -553,10 +553,14 @@ td {
       }
 
       #hunting {
-        min-height:700px;
+        min-height:725px;
       }
 
       #hunting-text {
+      }
+
+      #skateboarding {
+        min-height:725px;
       }
 
       #skateboarding-intro {
