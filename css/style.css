@@ -72,6 +72,11 @@ a:hover {
   background-color: transparent;
 }
 
+#navi-main > div {
+  padding-left:10px;
+  padding-right:10px;
+}
+
 #navi-main ul {
   padding:0;
   margin:0;
@@ -104,6 +109,8 @@ a:hover {
 .navbar .navbar-collapse {
     text-align: center;
     border: none;
+    padding-left:0;
+    padding-right:0;
 }
 
 #arrow-nav {
@@ -138,6 +145,11 @@ a:hover {
 
 .resources a {
   text-decoration: underline;
+  display: block;
+}
+
+.resources span {
+  display:block !important;
 }
 
 .resources a:hover {
@@ -146,7 +158,7 @@ a:hover {
 
 .social-icons {
   width:30px;
-  margin:5px;
+  margin:10px 5px;
 }
 
 #home {
@@ -230,7 +242,7 @@ a:hover {
 #hunting-text {
   height:100%;
   background:rgba(41, 48, 87, 0.5);
-  padding:35px 20px 20px 20px;
+  padding:15px 20px 20px 20px;
 }
 
 #skateboarding {
@@ -308,7 +320,26 @@ a:hover {
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
-  padding:160px 20px 20px 20px;
+  padding:200px 20px 20px 20px;
+}
+
+#kayaks {
+  background-image: url(../images/bg-kayaks.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height:100%;
+  min-height: 750px;
+  width:100%;
+  min-width: 100%;
+  position: relative;
+}
+
+#kayaks-intro {
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding:220px 20px 20px 20px;
 }
 
 #cycling {
@@ -521,6 +552,10 @@ td {
       #camping-text {
       }
 
+      #hunting {
+        min-height:700px;
+      }
+
       #hunting-text {
       }
 
@@ -541,14 +576,22 @@ td {
       #cycling-text {
       }
 
+      #summer {
+        min-height:950px;
+      }
+
       #summer-intro {
+      }
+
+      #winter {
+        min-height:900px;
       }
 
       #winter-intro {
       }
     }
 
-    @media only screen and (max-width : 480px) and (orientation:landscape) {
+    @media only screen and (max-width : 767px) and (orientation:landscape) {
       .navbar-nav>.active>a {
         color:#ffffff !important;
         border-bottom:none;
@@ -563,6 +606,15 @@ td {
         bottom:60px;
         right:8px;
       }
+
+      #summer {
+        min-height: 900px;
+      }
+
+      #winter {
+        min-height: 800px;
+      }
+    }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {

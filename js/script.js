@@ -10,6 +10,7 @@
   var skiing = document.getElementById('skiing');
   var fishing = document.getElementById('fishing');
   var paddlesports = document.getElementById('paddlesports');
+  var kayaks = document.getElementById('kayaks');
   var cycling = document.getElementById('cycling');
   var summer = document.getElementById('summer');
   var winter = document.getElementById('winter');
@@ -100,10 +101,17 @@ document.onkeydown = function(e) {
         setTimeout(function(){ running = false;}, 500);
     }
     //scroll to #paddlesports
-    if(running == false && windowOffsetScroll > $('#paddlesports').offset().top && windowOffsetScroll <= $('#cycling').offset().top) {
+    if(running == false && windowOffsetScroll > $('#paddlesports').offset().top && windowOffsetScroll <= $('#kayaks').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#paddlesports').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
+    //scroll to #kayaking
+    if(running == false && windowOffsetScroll > $('#kayaks').offset().top && windowOffsetScroll <= $('#cycling').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#kayaks').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
     //scroll to #cycling
@@ -181,8 +189,15 @@ document.onkeydown = function(e) {
         scrollTop: $('#paddlesports').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
+    //scroll to kayaks
+    if(running == false && windowOffsetScroll >= $('#paddlesports').offset().top && windowOffsetScroll < $('#kayaks').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#kayaks').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
     //scroll to cycling
-    if(running == false && windowOffsetScroll >= $('#paddlesports').offset().top && windowOffsetScroll < $('#cycling').offset().top) {
+    if(running == false && windowOffsetScroll >= $('#kayaks').offset().top && windowOffsetScroll < $('#cycling').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#cycling').offset().top}, 500);
@@ -263,10 +278,17 @@ arrowUp.addEventListener('click', function() {
       setTimeout(function(){ running = false;}, 500);
   }
   //scroll to #paddlesports
-  if(running == false && windowOffsetScroll > $('#paddlesports').offset().top && windowOffsetScroll <= $('#cycling').offset().top) {
+  if(running == false && windowOffsetScroll > $('#paddlesports').offset().top && windowOffsetScroll <= $('#kayaks').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#paddlesports').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
+  //scroll to #kayaks
+  if(running == false && windowOffsetScroll > $('#kayaks').offset().top && windowOffsetScroll <= $('#cycling').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#kayaks').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
   //scroll to #cycling
@@ -344,8 +366,15 @@ arrowDown.addEventListener('click', function() {
       scrollTop: $('#paddlesports').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
+  //scroll to kayaks
+  if(running == false && windowOffsetScroll >= $('#paddlesports').offset().top && windowOffsetScroll < $('#kayaks').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#kayaks').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
   //scroll to cycling
-  if(running == false && windowOffsetScroll >= $('#paddlesports').offset().top && windowOffsetScroll < $('#cycling').offset().top) {
+  if(running == false && windowOffsetScroll >= $('#kayaks').offset().top && windowOffsetScroll < $('#cycling').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#cycling').offset().top}, 500);
