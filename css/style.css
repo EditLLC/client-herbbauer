@@ -14,8 +14,15 @@ h5,
 h6 {
   color:#ffffff;
   font-family: "Times New Roman", Georgia, Serif;
-  text-align: center;
   margin:0 0 10px 0;
+}
+
+h1,h2,h4,h5,h6 {
+  text-align: center;
+}
+
+h2 {
+  font-size:36px;
 }
 
 p {
@@ -136,13 +143,6 @@ a:hover {
   text-decoration: none;
 }
 
-#camping .resources,
-#hunting .resources,
-#skateboarding .resources,
-#fishing-text .resources {
-  text-align: center;
-}
-
 .resources a {
   text-decoration: underline;
   display: block;
@@ -166,7 +166,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -185,7 +185,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -216,7 +216,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -233,7 +233,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -250,7 +250,7 @@ a:hover {
   background-size: cover;
   background-position: top center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -273,7 +273,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -292,7 +292,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -309,7 +309,7 @@ a:hover {
   background-size: cover;
   background-position: center bottom;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -328,7 +328,7 @@ a:hover {
   background-size: cover;
   background-position: center bottom;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -347,7 +347,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -364,7 +364,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -382,7 +382,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   height:100%;
-  min-height: 750px;
+  min-height: 775px;
   width:100%;
   min-width: 100%;
   position: relative;
@@ -447,9 +447,7 @@ td {
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
-      h1,h2,h3,h4,h5,h6 {
-        text-align: center;
-      }
+
 
       p {
         font-size:11px;
@@ -465,26 +463,15 @@ td {
         right:20px;
       }
 
-      #home,
-      #about,
-      #camping,
-      #hunting,
-      #skateboarding,
-      #skiing,
-      #fishing,
-      #paddlesports,
-      #cycling,
-      #summer,
-      #winter {
+      #home, #about, #camping,
+      #hunting, #skateboarding,
+      #skiing, #fishing, #paddlesports,
+      #cycling, #summer, #winter {
         min-height: 650px;
       }
 
-      #camping-text p,
-      #hunting-text p,
-      #skateboarding p,
-      #skiing p,
-      #fishing-text p,
-      #cycling-text p {
+      #skateboarding-intro {
+        padding-top:150px;
       }
 
       .table-rentals {
@@ -509,6 +496,20 @@ td {
         bottom:60px;
         right:8px;
       }
+
+      #camping-text p, #hunting-text p,
+      #skateboarding p, #skiing p,
+      #paddlesports p, #kayaks p,
+      #fishing-text p, #cycling-text p,
+      #camping-text h3, #hunting-text h3,
+      #skateboarding-intro h3, #fishing-text h3,
+      #paddlesports-intro h3, #kayaks-intro h3,
+      #camping-text .resources,
+      #hunting-text .resources,
+      #skateboarding-intro .resources,
+      #fishing-text .resources {
+        text-align: left;
+      }
     }
 
     @media only screen and (max-width : 767px) and (orientation:landscape) {
@@ -525,6 +526,28 @@ td {
       #arrow-nav {
         bottom:60px;
         right:8px;
+      }
+
+      #camping-text p, #hunting-text p,
+      #skateboarding p, #skiing p,
+      #paddlesports p, #kayaks p,
+      #fishing-text p, #cycling-text p,
+      #camping-text h3, #hunting-text h3,
+      #skateboarding-intro h3, #fishing-text h3,
+      #paddlesports-intro h3, #kayaks-intro h3,
+      #camping-text .resources,
+      #hunting-text .resources,
+      #skateboarding-intro .resources,
+      #fishing-text .resources {
+        text-align: left;
+      }
+
+      #summer {
+        min-height: 900px;
+      }
+
+      #winter {
+        min-height: 800px;
       }
     }
 
@@ -549,14 +572,8 @@ td {
         padding-top:100px;
       }
 
-      #camping-text {
-      }
-
       #hunting {
         min-height:725px;
-      }
-
-      #hunting-text {
       }
 
       #skateboarding {
@@ -567,60 +584,35 @@ td {
         padding-top:100px;
       }
 
-      #skiing-intro {
-      }
-
       #fishing-text {
+        padding-top:100px;
       }
 
       #paddlesports-intro {
         padding-top:70px;
       }
 
-      #cycling-text {
-      }
-
       #summer {
         min-height:950px;
-      }
-
-      #summer-intro {
       }
 
       #winter {
         min-height:900px;
       }
-
-      #winter-intro {
-      }
-    }
-
-    @media only screen and (max-width : 767px) and (orientation:landscape) {
-      .navbar-nav>.active>a {
-        color:#ffffff !important;
-        border-bottom:none;
-        padding-bottom:10px;
-      }
-
-      span.navi-link br {
-        display: none;
-      }
-
-      #arrow-nav {
-        bottom:60px;
-        right:8px;
-      }
-
-      #summer {
-        min-height: 900px;
-      }
-
-      #winter {
-        min-height: 800px;
-      }
     }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
+      .navbar-nav>li>a {
+        padding-top:5px;
+        padding-bottom:5px;
+      }
 
+      .boardroom {
+        width:280px;
+      }
+
+      #hunting {
+        min-height:825px;
+      }
     }
