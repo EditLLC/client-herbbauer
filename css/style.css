@@ -601,13 +601,24 @@ td {
       }
     }
 
-    /* Custom, iPhone Retina */
-    @media only screen and (max-width : 320px) {
+    @media only screen and (max-width : 767px) and (orientation:landscape) {
+      .navbar-nav>.active>a {
+        padding-bottom:5px;
+      }
+
       .navbar-nav>li>a {
         padding-top:5px;
         padding-bottom:5px;
       }
 
+      .navbar .navbar-collapse {
+        padding-top:5px;
+        padding-bottom:5px;
+      }
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
       .boardroom {
         width:280px;
       }
