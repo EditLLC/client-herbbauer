@@ -573,7 +573,7 @@ td {
       }
 
       #hunting {
-        min-height:725px;
+        min-height:825px;
       }
 
       #skateboarding {
@@ -610,9 +610,5 @@ td {
 
       .boardroom {
         width:280px;
-      }
-
-      #hunting {
-        min-height:825px;
       }
     }
