@@ -177,7 +177,7 @@ a:hover {
   width:100%;
   height:100%;
   background: rgba(0, 0, 0, 0.5);
-  padding:220px 20px 20px 20px;
+  padding:260px 20px 20px 20px;
 }
 
 #about {
@@ -621,5 +621,55 @@ td {
     @media only screen and (max-width : 320px) {
       .boardroom {
         width:280px;
+      }
+    }
+
+    @media only screen and (min-width : 1440px) {
+      #home-intro {
+        padding-top:30%;
+      }
+
+      #about-intro {
+        padding-top:12%;
+      }
+
+      #camping-text {
+        padding-top:12%;
+      }
+
+      #hunting-text {
+        padding-top:12%;
+      }
+
+      #skateboarding-intro {
+        padding-top:20%;
+      }
+
+      #skiing-intro {
+        padding-top:25%;
+      }
+
+      #fishing-text {
+        padding-top:20%;
+      }
+
+      #paddlesports-intro {
+        padding-top:25%;
+      }
+
+      #kayaks-intro {
+        padding-top:25%;
+      }
+
+      #cycling-text {
+        padding-top:25%;
+      }
+
+      #summer-intro {
+        padding-top:5%;
+      }
+
+      #winter-intro {
+        padding-top:5%;
       }
     }
