@@ -131,12 +131,12 @@ a:hover {
 }
 
 .learn-more-button {
-  margin:10px 0;
+  margin:10px 5px;
 }
 
 .learn-more-button a {
   display:inline-block;
-  padding:5px 25px;
+  padding:5px 5px;
 }
 
 .learn-more-button a:hover {
@@ -162,7 +162,7 @@ a:hover {
 }
 
 #home {
-  background-image: url(../images/bg-home.jpg);
+  background-image: url(../images/bg-about.jpg);
   background-size: cover;
   background-position: center;
   height:100%;
@@ -246,9 +246,9 @@ a:hover {
 }
 
 #skateboarding {
-  background-image: url(../images/bg-skateboarding.jpg);
+ background-image: url(../images/bg-skateboarding.jpg);
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   height:100%;
   min-height: 775px;
   width:100%;
@@ -257,14 +257,14 @@ a:hover {
 }
 
 #skateboarding-intro {
-  position: absolute;
-  width:100%;
   height:100%;
-  background: rgba(0, 0, 0, 0.5);
-  padding:220px 20px 20px 20px;
+  background:rgba(41, 48, 87, 0.5);
+  padding:150px 20px 20px 20px;
 }
 
 .boardroom {
+  position: relative;
+  left: 160px;
   width:320px;
 }
 
@@ -436,6 +436,19 @@ td {
       }
     }
 
+    @media only screen and (min-width : 992px) {
+    .col-md-offset-2 {
+        margin-left: 31.666667%;
+      }
+
+      .col-md-8 {
+        width: 37.666667%;
+      }
+      .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        /* float: left; */
+      }
+    }
+
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
       #navi-main a {
@@ -565,11 +578,19 @@ td {
       }
 
       #home-intro {
-        padding-top:190px
+        padding-top:180px
       }
 
       #about-intro {
         padding-top:100px;
+      }
+
+      #camping {
+        min-height:825px;
+      }
+
+      .learn-more-button {
+        margin:5px 0px;
       }
 
       #hunting {
@@ -582,6 +603,12 @@ td {
 
       #skateboarding-intro {
         padding-top:100px;
+      }
+
+      .boardroom {
+        position: relative;
+        left: 0px;
+        width:320px;
       }
 
       #fishing-text {
@@ -626,7 +653,7 @@ td {
 
     @media only screen and (min-width : 1440px) {
       #home-intro {
-        padding-top:30%;
+        padding-top:19%;
       }
 
       #about-intro {
@@ -638,11 +665,11 @@ td {
       }
 
       #hunting-text {
-        padding-top:12%;
+        padding-top:8%;
       }
 
       #skateboarding-intro {
-        padding-top:20%;
+        padding-top:15%;
       }
 
       #skiing-intro {
