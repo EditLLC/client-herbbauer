@@ -663,6 +663,16 @@ td {
     }
 
     @media only screen and (min-width : 1440px) {
+
+      #home, #hunting,
+      #fishing, #camping,
+      #skateboarding, #skiing,
+      #paddlesports, #kayaks,
+      #cycling, #summer,
+      #winter {
+        min-height:1000px;
+      }
+
       #home-intro {
         padding-top:12.5%;
       }
