@@ -3,7 +3,6 @@
   'use strict';
 
   var home = document.getElementById('home');
-  var about = document.getElementById('about');
   var camping = document.getElementById('camping');
   var hunting = document.getElementById('hunting');
   var skateboarding = document.getElementById('skateboarding');
@@ -19,7 +18,7 @@
   var windowHeight = window.innerHeight;
 
   $('body').scrollspy({ target: '#navi-main' })
-  $(".navbar-nav li a[href^='#'],.learn-more-button a[href^='#']").on('click', function(e) {
+  $(".navbar-nav li a[href^='#']").on('click', function(e) {
    // prevent default anchor click behavior
    e.preventDefault();
 
@@ -46,58 +45,53 @@ var running = false;
 var windowOffsetScroll = window.pageYOffset;
 var windowHeight = window.innerHeight;
 
+
+//scroll up with arrow key left/up
 document.onkeydown = function(e) {
   if(e.keyCode == 37 || e.keyCode == 38 && running == false) {
     event.preventDefault(e);
     windowOffsetScroll = window.pageYOffset;
 
     //scroll to #home
-    if(running == false && windowOffsetScroll <= $('#about').offset().top) {
+    if(running == false && windowOffsetScroll <= $('#hunting').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#home').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
-    //scroll to #about
-    if(running == false && windowOffsetScroll > $('#about').offset().top && windowOffsetScroll <= $('#camping').offset().top) {
-      running = true;
-      $('html, body').animate({
-        scrollTop: $('#about').offset().top}, 500);
-        setTimeout(function(){ running = false;}, 500);
-    }
     //scroll to #camping
-    if(running == false && windowOffsetScroll > $('#camping').offset().top && windowOffsetScroll <= $('#hunting').offset().top) {
-      running = true;
-      $('html, body').animate({
-        scrollTop: $('#camping').offset().top}, 500);
-        setTimeout(function(){ running = false;}, 500);
-    }
-    //scroll to #hunting
-    if(running == false && windowOffsetScroll > $('#hunting').offset().top && windowOffsetScroll <= $('#skateboarding').offset().top) {
+    if(running == false && windowOffsetScroll > $('#hunting').offset().top && windowOffsetScroll <= $('#fishing').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#hunting').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
+    //scroll to #hunting
+    if(running == false && windowOffsetScroll > $('#fishing').offset().top && windowOffsetScroll <= $('#camping').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#fishing').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
     //scroll to #skateboarding
+    if(running == false && windowOffsetScroll > $('#camping').offset().top && windowOffsetScroll <= $('#skateboarding').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#camping').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
+    //scroll to #skiing
     if(running == false && windowOffsetScroll > $('#skateboarding').offset().top && windowOffsetScroll <= $('#skiing').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#skateboarding').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
-    //scroll to #skiing
-    if(running == false && windowOffsetScroll > $('#skiing').offset().top && windowOffsetScroll <= $('#fishing').offset().top) {
+    //scroll to #fishing
+    if(running == false && windowOffsetScroll > $('#skiing').offset().top && windowOffsetScroll <= $('#paddlesports').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#skiing').offset().top}, 500);
-        setTimeout(function(){ running = false;}, 500);
-    }
-    //scroll to #fishing
-    if(running == false && windowOffsetScroll > $('#fishing').offset().top && windowOffsetScroll <= $('#paddlesports').offset().top) {
-      running = true;
-      $('html, body').animate({
-        scrollTop: $('#fishing').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
     //scroll to #paddlesports
@@ -137,53 +131,47 @@ document.onkeydown = function(e) {
     }
   }
 
+  //scroll down with arrow key down/right
   if(e.keyCode == 39 || e.keyCode == 40 && running == false) {
     event.preventDefault(e);
     windowOffsetScroll = window.pageYOffset;
-    //scroll to #about
-    if(running == false && windowOffsetScroll < $('#about').offset().top) {
-      running = true;
-      $('html, body').animate({
-        scrollTop: $('#about').offset().top}, 500);
-        setTimeout(function(){ running = false;}, 500);
-    }
     //scroll to #camping
-    if(running == false && windowOffsetScroll >= $('#about').offset().top && windowOffsetScroll < $('#camping').offset().top) {
-      running = true;
-      $('html, body').animate({
-        scrollTop: $('#camping').offset().top}, 500);
-        setTimeout(function(){ running = false;}, 500);
-    }
-    //scroll to #hunting
-    if(running == false && windowOffsetScroll >= $('#camping').offset().top && windowOffsetScroll < $('#hunting').offset().top) {
+    if(running == false && windowOffsetScroll < $('#hunting').offset().top && windowOffsetScroll < $('#hunting').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#hunting').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
+    //scroll to #hunting
+    if(running == false && windowOffsetScroll >= $('#hunting').offset().top && windowOffsetScroll < $('#fishing').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#fishing').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
     //scroll to #skateboarding
-    if(running == false && windowOffsetScroll >= $('#hunting').offset().top && windowOffsetScroll < $('#skateboarding').offset().top) {
+    if(running == false && windowOffsetScroll >= $('#fishing').offset().top && windowOffsetScroll < $('#camping').offset().top) {
+      running = true;
+      $('html, body').animate({
+        scrollTop: $('#camping').offset().top}, 500);
+        setTimeout(function(){ running = false;}, 500);
+    }
+    //scroll to skiing
+    if(running == false && windowOffsetScroll >= $('#camping').offset().top && windowOffsetScroll < $('#skateboarding').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#skateboarding').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
-    //scroll to skiing
+    //scroll to fishing
     if(running == false && windowOffsetScroll >= $('#skateboarding').offset().top && windowOffsetScroll < $('#skiing').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#skiing').offset().top}, 500);
         setTimeout(function(){ running = false;}, 500);
     }
-    //scroll to fishing
-    if(running == false && windowOffsetScroll >= $('#skiing').offset().top && windowOffsetScroll < $('#fishing').offset().top) {
-      running = true;
-      $('html, body').animate({
-        scrollTop: $('#fishing').offset().top}, 500);
-        setTimeout(function(){ running = false;}, 500);
-    }
     //scroll to paddlesports
-    if(running == false && windowOffsetScroll >= $('#fishing').offset().top && windowOffsetScroll < $('#paddlesports').offset().top) {
+    if(running == false && windowOffsetScroll >= $('#skiing').offset().top && windowOffsetScroll < $('#paddlesports').offset().top) {
       running = true;
       $('html, body').animate({
         scrollTop: $('#paddlesports').offset().top}, 500);
@@ -229,52 +217,45 @@ arrowUp.addEventListener('click', function() {
   windowOffsetScroll = window.pageYOffset;
 
   //scroll to #home
-  if(running == false && windowOffsetScroll <= $('#about').offset().top) {
+  if(running == false && windowOffsetScroll <= $('#hunting').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#home').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
-  //scroll to #about
-  if(running == false && windowOffsetScroll > $('#about').offset().top && windowOffsetScroll <= $('#camping').offset().top) {
-    running = true;
-    $('html, body').animate({
-      scrollTop: $('#about').offset().top}, 500);
-      setTimeout(function(){ running = false;}, 500);
-  }
   //scroll to #camping
-  if(running == false && windowOffsetScroll > $('#camping').offset().top && windowOffsetScroll <= $('#hunting').offset().top) {
-    running = true;
-    $('html, body').animate({
-      scrollTop: $('#camping').offset().top}, 500);
-      setTimeout(function(){ running = false;}, 500);
-  }
-  //scroll to #hunting
-  if(running == false && windowOffsetScroll > $('#hunting').offset().top && windowOffsetScroll <= $('#skateboarding').offset().top) {
+  if(running == false && windowOffsetScroll > $('#hunting').offset().top && windowOffsetScroll <= $('#fishing').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#hunting').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
+  //scroll to #hunting
+  if(running == false && windowOffsetScroll > $('#fishing').offset().top && windowOffsetScroll <= $('#camping').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#fishing').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
   //scroll to #skateboarding
+  if(running == false && windowOffsetScroll > $('#camping').offset().top && windowOffsetScroll <= $('#skateboarding').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#camping').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
+  //scroll to #skiing
   if(running == false && windowOffsetScroll > $('#skateboarding').offset().top && windowOffsetScroll <= $('#skiing').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#skateboarding').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
-  //scroll to #skiing
-  if(running == false && windowOffsetScroll > $('#skiing').offset().top && windowOffsetScroll <= $('#fishing').offset().top) {
+  //scroll to #fishing
+  if(running == false && windowOffsetScroll > $('#skiing').offset().top && windowOffsetScroll <= $('#paddlesports').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#skiing').offset().top}, 500);
-      setTimeout(function(){ running = false;}, 500);
-  }
-  //scroll to #fishing
-  if(running == false && windowOffsetScroll > $('#fishing').offset().top && windowOffsetScroll <= $('#paddlesports').offset().top) {
-    running = true;
-    $('html, body').animate({
-      scrollTop: $('#fishing').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
   //scroll to #paddlesports
@@ -317,50 +298,43 @@ arrowUp.addEventListener('click', function() {
 arrowDown.addEventListener('click', function() {
 
   windowOffsetScroll = window.pageYOffset;
-  //scroll to #about
-  if(running == false && windowOffsetScroll < $('#about').offset().top) {
-    running = true;
-    $('html, body').animate({
-      scrollTop: $('#about').offset().top}, 500);
-      setTimeout(function(){ running = false;}, 500);
-  }
   //scroll to #camping
-  if(running == false && windowOffsetScroll >= $('#about').offset().top && windowOffsetScroll < $('#camping').offset().top) {
-    running = true;
-    $('html, body').animate({
-      scrollTop: $('#camping').offset().top}, 500);
-      setTimeout(function(){ running = false;}, 500);
-  }
-  //scroll to #hunting
-  if(running == false && windowOffsetScroll >= $('#camping').offset().top && windowOffsetScroll < $('#hunting').offset().top) {
+  if(running == false && windowOffsetScroll < $('#hunting').offset().top && windowOffsetScroll < $('#hunting').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#hunting').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
+  //scroll to #hunting
+  if(running == false && windowOffsetScroll >= $('#hunting').offset().top && windowOffsetScroll < $('#fishing').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#fishing').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
   //scroll to #skateboarding
-  if(running == false && windowOffsetScroll >= $('#hunting').offset().top && windowOffsetScroll < $('#skateboarding').offset().top) {
+  if(running == false && windowOffsetScroll >= $('#fishing').offset().top && windowOffsetScroll < $('#camping').offset().top) {
+    running = true;
+    $('html, body').animate({
+      scrollTop: $('#camping').offset().top}, 500);
+      setTimeout(function(){ running = false;}, 500);
+  }
+  //scroll to skiing
+  if(running == false && windowOffsetScroll >= $('#camping').offset().top && windowOffsetScroll < $('#skateboarding').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#skateboarding').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
-  //scroll to skiing
+  //scroll to fishing
   if(running == false && windowOffsetScroll >= $('#skateboarding').offset().top && windowOffsetScroll < $('#skiing').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#skiing').offset().top}, 500);
       setTimeout(function(){ running = false;}, 500);
   }
-  //scroll to fishing
-  if(running == false && windowOffsetScroll >= $('#skiing').offset().top && windowOffsetScroll < $('#fishing').offset().top) {
-    running = true;
-    $('html, body').animate({
-      scrollTop: $('#fishing').offset().top}, 500);
-      setTimeout(function(){ running = false;}, 500);
-  }
   //scroll to paddlesports
-  if(running == false && windowOffsetScroll >= $('#fishing').offset().top && windowOffsetScroll < $('#paddlesports').offset().top) {
+  if(running == false && windowOffsetScroll >= $('#skiing').offset().top && windowOffsetScroll < $('#paddlesports').offset().top) {
     running = true;
     $('html, body').animate({
       scrollTop: $('#paddlesports').offset().top}, 500);
