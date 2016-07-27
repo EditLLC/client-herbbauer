@@ -166,6 +166,11 @@ a:hover {
   text-decoration: none;
 }
 
+.underline {
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
 .social-icons {
   width:30px;
   margin:10px 5px;
@@ -674,7 +679,7 @@ td {
       }
 
       #home-intro {
-        padding-top:12.5%;
+        padding-top:20%;
       }
 
       #about-intro {
