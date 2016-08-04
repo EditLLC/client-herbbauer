@@ -453,6 +453,14 @@ td {
         padding-left:10px;
         padding-right:10px;
       }
+       #home-intro {
+        padding-top:15%;
+      }
+    }
+    @media only screen and (min-width : 992px) {
+       #home-intro {
+        padding-top:15%;
+      }
     }
 
     /* Small Devices, Tablets */
@@ -680,7 +688,7 @@ td {
       }
 
       #home-intro {
-        padding-top:20%;
+        padding-top:15%;
       }
 
       #about-intro {
